@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasa API</title>
+    <script src="await.js" defer></script>
+    <style>
+        .search{
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color .15s ease-in-out;
+  border: white;
+}
+.nebulosa{
+    width: 100%;
+}
+.search:hover, .btnDescargar:focus {
+  background-color: #0069d9;
+}
+
+.search:active {
+  background-color: #0062cc;
+}
+h1{
+  color: #0069d9;
+  background-image: "https://www.nasa.gov/sites/default/files/thumbnails/image/jsc2020e000649.jpg";
+}
+h3{
+  color: white;
+  background-color: black;
+}
+body{
+    margin: 50px;
+}
+    </style>
+</head>
+<body>
+    <h1>{NASA APIs}</h1>
+    <h3><b>APOD:</b>  <a href="https://apod.nasa.gov/apod/astropix.html" style="color: white;">Astronomy picture of the day</a> </h3>
+    <p>¡Descubre el cosmos! Cada día una imagen o fotografía diferente
+      de nuestro fascinante universo es exaltada, junto con una pequeña explicación de uno de nuestros profesionales astrónomos.
+    </p>
+    <button id="search" class="search">
+        search
+    </button>
+    <img src="nabulosa.png" class="nebulosa">
+    <div id="content">
+
+    </div>
+</body>
+</html>
